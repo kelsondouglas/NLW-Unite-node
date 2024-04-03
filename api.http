@@ -1,8 +1,20 @@
+
+
 POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-    "title": "Título do evento",
-    "details": "Detalhes do evento",
+    "title": "NLW Unite",
+    "details": "Maior evento de programação de forma prática do Brasil.",
     "maximumAttendees": 20
+}
+
+###
+
+POST http://localhost:3333/events/ef462991-acc9-4cd7-887b-b651f513cf7d/attendee
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "johndoe@teste.com",
 }
